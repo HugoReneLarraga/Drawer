@@ -6,4 +6,18 @@ class bitacora{
 
   bitacora({this.fecha,this.dron, this.detalles});
 
+
+  /* Se crea el metodo toMap para transformar los datos de un formato de objeto
+  a mapa. Este es necesario para introducir registros a la base de datos.
+   */
+  Map<String, dynamic> toMap() {
+    return {
+      'fecha': fecha,
+      'dron': dron,
+      'detalles': detalles,
+    };
+  }
+
+
+
 }

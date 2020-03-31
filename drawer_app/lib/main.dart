@@ -1,10 +1,16 @@
 
+import 'package:drawer_app/modelo/manipulacionBD.dart';
 import 'package:drawer_app/vista/vuelosBD.dart';
 import 'package:drawer_app/vista/vuelosWeb.dart';
 import 'package:drawer_app/vista/home.dart';
 import 'package:flutter/material.dart';
 
+
 void main() {
+  final ManipulacionBD bd = ManipulacionBD(); // Instancia de la clase para la manipulación de datos
+
+  bd.cargarDatos(); // Inserto datos ficticios a la base de datos SQLite
+
   runApp(MyApp());
 }
 
