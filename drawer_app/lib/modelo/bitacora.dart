@@ -18,6 +18,14 @@ class bitacora{
     };
   }
 
+  factory bitacora.fromJson(Map<String, dynamic> json) {
+    return bitacora(
+      fecha: json['fecha'],
+      dron: json['dron'],
+      detalles: json['detalles'],
+
+    );
+  }
 
 
 }
